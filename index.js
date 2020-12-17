@@ -10,11 +10,11 @@ let data = [6, 9, 4, 2, 7],
     yAxis: "",
     title: "Bar Char",
   },
-  element = "";
+  element = "figure ul";
 
-const createBar = (num, max) => {
+const createBar = (num, max, element) => {
   let percentage = (num / max) * 100,
-    li = $("ul").append("<li></li>"),
+    li = $(`${element}`).append("<li></li>"),
     currentLi = $("li").last().addClass(`${num}`),
     div = $(`.${num}`).append("<div></div>"),
     container = $(`.${num} div`).addClass(`container`),
@@ -55,7 +55,7 @@ const drawBarChart = (data, options, element) => {
     return b - a;
   })[0];
   data.map((x) => {
-    return createBar(x, max);
+    return createBar(x, max, element);
   });
   createStyle(options);
 };
