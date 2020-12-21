@@ -1,21 +1,29 @@
-export default function createStyle(options) {
+export default function createStyle1(options) {
   const {
     height,
-    color,
-    labelColor,
-    textPosition,
+    width,
+    barColor,
+    barTextColor,
+    titleTextColor,
+    titleFontSize,
     fontSize,
-    spacing,
-    xAxis,
-    yAxis,
-    title,
+    textTransform,
+    xTextColor,
+    xFontSize,
   } = options;
-  let li = $(".skills").css({
-    height: `${height}`,
-    backgroundColor: `${color}`,
-    color: `${labelColor}`,
-    textAlign: `${textPosition}`,
+  $("#q-graph").css({ width: `${width}`, height: `${height}` });
+  $("caption").css({
+    textTransform: `${textTransform}`,
+    color: `${titleTextColor}`,
+    fontSize: `${titleFontSize}`,
+  });
+  $("td").css({
+    backgroundColor: `${barColor}`,
+    color: `${barTextColor}`,
     fontSize: `${fontSize}`,
-    "line-height": `${spacing}`,
+  });
+  $("tbody tr").css({
+    color: `${xTextColor}`,
+    fontSize: `${xFontSize}`,
   });
 }

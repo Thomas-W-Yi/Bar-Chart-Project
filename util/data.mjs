@@ -1,15 +1,17 @@
 let data = [6, 9, 4, 2, 7],
   options = {
-    height: 2,
-    color: "red",
-    labelColor: "black",
-    textPosition: "right",
+    height: "300px",
+    width: "600px",
+    barColor: "orange",
+    barTextColor: "black",
+    titleTextColor: "black",
     fontSize: "1rem",
-    spacing: 1,
-    xAxis: "",
-    yAxis: "",
-    title: "Bar Char",
+    titleFontSize: "2rem",
+    spacing: 600 / data.length,
+    texTransform: "uppercase",
+    xTextColor: "black",
+    xFontSize: "1rem",
   },
-  element = "figure ul";
+  element = "tbody";
 
 export { data, options, element };

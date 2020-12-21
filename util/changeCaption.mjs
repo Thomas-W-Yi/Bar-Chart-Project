@@ -1,4 +1,4 @@
-export default function changeTitle() {
+export default function changeTitle(options) {
   $("caption").on("click", (event) => {
     console.log(event.target.innerText);
     $(event.target).html(

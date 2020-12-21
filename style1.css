@@ -13,8 +13,6 @@ body {
 #q-graph {
   display: block;
   position: relative;
-  width: 600px;
-  height: 300px;
   margin: 1.1em 0 0;
   padding: 0;
   background: transparent;
@@ -24,7 +22,6 @@ body {
 #q-graph caption {
   caption-side: top;
   width: 600px;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
   top: -60px;
   position: relative;
@@ -64,16 +61,13 @@ body {
   border: 1px solid;
   border-bottom: none;
   bottom: -0.8em;
-  color: #000;
+  /* color: #000; */
+  border-color: transparent;
 }
 #q-graph .bar p {
   margin: 5px 0 0;
   padding: 0;
   opacity: 0.4;
-}
-#q-graph .sent {
-  background-color: #39cccc;
-  border-color: transparent;
 }
 
 #ticks {
