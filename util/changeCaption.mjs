@@ -1,6 +1,5 @@
 export default function changeTitle() {
   $("caption").on("click", (event) => {
-    console.log(event.target.innerText);
     $(event.target).html(
       `<input type="text" placeholder ="newName" id="textbox"/>`
     );

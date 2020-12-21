@@ -3,7 +3,7 @@ import createBar from "./util/createBar.mjs";
 import createBarSection from "./util/createBarSection.mjs";
 import createY from "./util/createY.mjs";
 import changeX from "./util/changeX.mjs";
-import createStyle1 from "./util/createStyle1.mjs";
+import createStyle from "./util/createStyle.mjs";
 import { data, options, element } from "./util/data.mjs";
 
 const drawBarChart = (data, options, element) => {
@@ -12,6 +12,6 @@ const drawBarChart = (data, options, element) => {
   changeX(options);
   createBar(data, options);
   createY();
-  createStyle1(options);
+  createStyle(options);
 };
 drawBarChart(data, options, element);

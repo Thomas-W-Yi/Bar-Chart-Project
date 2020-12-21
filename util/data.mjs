@@ -1,16 +1,19 @@
 let data = [1, 2, 3, 4, 5],
   options = {
-    height: "300px",
-    width: "600px",
+    graphHeight: "300px",
+    graphWidth: "600px",
+    barWidth: "",
     barColor: "orange",
     barTextColor: "black",
+    valueFontSize: "1rem",
     titleTextColor: "black",
-    fontSize: "1rem",
+    titlePosition: "relative",
     titleFontSize: "2rem",
     spacing: 600 / data.length,
-    texTransform: "uppercase",
+    titleTextTransform: "uppercase",
     xTextColor: "black",
     xFontSize: "1rem",
+    valuePosition: "center",
   },
   element = "tbody";
 
