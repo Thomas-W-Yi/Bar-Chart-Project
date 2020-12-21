@@ -14,4 +14,5 @@ const drawBarChart = (data, options, element) => {
   createStyle(options);
   changeTitle();
 };
+
 drawBarChart(data, options, element);
