@@ -1,4 +1,4 @@
-export default function createTr(data, options, element) {
+export default function createBarSection(data, options, element) {
   const { spacing } = options;
   data.map((x, index) => {
     $(`${element}`).append(

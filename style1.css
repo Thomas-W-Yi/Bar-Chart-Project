@@ -60,8 +60,7 @@ body {
   width: 50px;
   border: 1px solid;
   border-bottom: none;
-  bottom: -0.8em;
-  /* color: #000; */
+  bottom: -0.65em;
   border-color: transparent;
 }
 #q-graph .bar p {

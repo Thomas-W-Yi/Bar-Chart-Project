@@ -1,4 +1,4 @@
-export default function createBar1(data, options) {
+export default function createBar(data, options) {
   let arr = [...data],
     max = arr.sort((a, b) => {
       return b - a;

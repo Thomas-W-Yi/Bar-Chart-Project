@@ -1,4 +1,4 @@
-let data = [6, 9, 4, 2, 7],
+let data = [1, 2, 3, 4, 5],
   options = {
     height: "300px",
     width: "600px",
