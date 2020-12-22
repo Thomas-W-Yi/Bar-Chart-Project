@@ -1,17 +1,20 @@
 export default function createBar(data, options) {
   let arr = [...data],
-    max = [0, 0],
-    { barColor, spacing } = options;
+    max = [],
+    { barColor } = options;
+  data.map((subArr) => {
+    return max.push(0);
+  });
 
   if (data[0].length > 1) {
     for (let i = 0; i < data.length; i++) {
       data[i].map((x) => {
         x - max[i] > 0 ? (max[i] = x) : null;
       });
-      console.log(max[i], data);
+
       data[i].map((x, index) => {
         let percentage = (x / max[i]) * 100;
-        console.log(percentage, index);
+        console.log(max[i], percentage, index);
         $(`#${index}`).append(`<td class="bar${i}${index}"><p>${x}</p></td>`);
         $(`.bar${i}${index}`).css({
           height: `${percentage + 1}%`,

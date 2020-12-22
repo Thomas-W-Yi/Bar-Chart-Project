@@ -35,6 +35,9 @@ export default function createStyle(data, options) {
     textAlign: `${valuePosition}`,
     bottom: "-0.65em",
   });
+  $("td p").css({
+    zIndex: "10",
+  });
   $("tbody tr").css({
     height: "100%",
     color: `${xTextColor}`,
@@ -42,6 +45,7 @@ export default function createStyle(data, options) {
   });
   $("tr th").css({
     bottom: "-3em",
+    marginLeft: "1.5rem",
   });
 
   $("#ticks").css({
