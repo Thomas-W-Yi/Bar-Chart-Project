@@ -1,4 +1,4 @@
-export default function createStyle(options) {
+export default function createStyle(data, options) {
   const {
     graphHeight,
     graphWidth,
@@ -27,12 +27,12 @@ export default function createStyle(options) {
     position: `${titlePosition}`,
     top: "-60px",
   });
+
   $("td").css({
-    backgroundColor: `${barColor}`,
+    display: "block",
     color: `${barTextColor}`,
     fontSize: `${valueFontSize}`,
     textAlign: `${valuePosition}`,
-    width: "50px",
     bottom: "-0.65em",
   });
   $("tbody tr").css({

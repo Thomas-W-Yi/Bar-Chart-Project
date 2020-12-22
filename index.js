@@ -12,6 +12,6 @@ const drawBarChart = (data, options, element) => {
   changeX(options);
   createBar(data, options);
   createY();
-  createStyle(options);
+  createStyle(data, options);
 };
 drawBarChart(data, options, element);
