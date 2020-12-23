@@ -3,7 +3,9 @@ export default function createBarSection(data, options, element) {
   if (data[0].length > 1) {
     data[0].map((x, index) => {
       $(`${element}`).append(
-        `<tr class="tr" id=${index}><th scope="row">index${index + 1}</th></tr>`
+        `<tr class="tr" id=${index}><th scope="row">Section${
+          index + 1
+        }</th></tr>`
       );
       $("tbody tr")
         .last()
@@ -14,7 +16,9 @@ export default function createBarSection(data, options, element) {
   } else {
     data.map((x, index) => {
       $(`${element}`).append(
-        `<tr class="tr" id=${index}><th scope="row">index${index + 1}</th></tr>`
+        `<tr class="tr" id=${index}><th scope="row">Section${
+          index + 1
+        }</th></tr>`
       );
       $("tbody tr")
         .last()
