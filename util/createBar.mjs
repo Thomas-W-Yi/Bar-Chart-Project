@@ -1,6 +1,5 @@
 export default function createBar(data, options) {
-  let arr = [...data],
-    max = [],
+  let max = [],
     { barColor } = options;
   data.map((subArr) => {
     return max.push(0);
@@ -14,7 +13,6 @@ export default function createBar(data, options) {
 
       data[i].map((x, index) => {
         let percentage = (x / max[i]) * 100;
-        console.log(max[i], percentage, index);
         $(`#${index}`).append(`<td class="bar${i}${index}"><p>${x}</p></td>`);
         $(`.bar${i}${index}`).css({
           height: `${percentage + 1}%`,

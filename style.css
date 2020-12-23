@@ -18,3 +18,10 @@ body {
   bottom: 0;
   z-index: 1;
 }
+
+.input-group {
+  margin-top: -1rem;
+  margin-right: 2rem;
+  margin-left: 0;
+  margin-bottom: 2rem;
+}

@@ -2,7 +2,6 @@ export default function createStyle(data, options) {
   const {
     graphHeight,
     graphWidth,
-    barColor,
     barTextColor,
     titleTextColor,
     titleFontSize,
@@ -33,7 +32,6 @@ export default function createStyle(data, options) {
     color: `${barTextColor}`,
     fontSize: `${valueFontSize}`,
     textAlign: `${valuePosition}`,
-    bottom: "-0.65em",
   });
   $("td p").css({
     zIndex: "10",
