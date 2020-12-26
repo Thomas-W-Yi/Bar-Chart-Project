@@ -3,6 +3,7 @@ export default function createStyle(data, options) {
     graphHeight,
     graphWidth,
     barTextColor,
+    barTextPosition,
     titleTextColor,
     titleFontSize,
     titlePosition,
@@ -34,6 +35,8 @@ export default function createStyle(data, options) {
     textAlign: `${valuePosition}`,
   });
   $("td p").css({
+    position: "relative",
+    top: `${barTextPosition.middle}`,
     zIndex: "10",
   });
   $("tbody tr").css({

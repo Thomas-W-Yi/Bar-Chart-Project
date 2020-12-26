@@ -9,6 +9,7 @@ let data = $("#multipArray")
     graphWidth: "600px",
     barColor: ["#e27d60", "#e8a87c", "#41b3a3", "#8d8741", "#659dbd"],
     barTextColor: "black",
+    barTextPosition: { top: "0", middle: "50%", bottom: "100%" },
     valueFontSize: "1rem",
     titleTextColor: "black",
     titlePosition: "relative",
