@@ -18,6 +18,7 @@ export default function createStyle(data, options) {
     height: `${graphHeight}`,
     display: "block",
     position: "relative",
+    border: "solid 2px",
   });
   $("caption").css({
     textTransform: `${titleTextTransform}`,
