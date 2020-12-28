@@ -12,8 +12,6 @@ You can find this APP here: https://thomaswyee.github.io/Bar-Chart-Project/
 
 <h2> Features </h2>
 
-![Data input from endusers](demo/DataInputArea.png)
-
 - It takes an array of numbers.
   for single bar: [[1],[2],[3],[4],[5]];
   ![Single Value Bar](demo/SingleVal.png)
