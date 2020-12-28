@@ -1,13 +1,13 @@
 export default function createBarSection(data, options, element) {
   const { spacing } = options;
   if (data[0].length > 1) {
-    data[0].map((x, index) => {
+    data.map((x, index) => {
       $(`${element}`).append(
         `<tr class="tr" id=${index}><th scope="row">Section${
           index + 1
-        }</th></tr>`
+        }</th></tr>"`
       );
-      $("tbody tr")
+      $("tr")
         .last()
         .css({
           left: `${index * spacing}px`,

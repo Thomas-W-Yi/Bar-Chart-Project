@@ -8,12 +8,19 @@ import changeLabel from "./util/changeLabel.mjs";
 import createStyle from "./util/createStyle.mjs";
 import { element } from "./util/data.mjs";
 
-let data = $("#multipArray")
-    .val()
-    .split(";")
-    .map((x) => {
-      return x.split(",");
-    }),
+// let data = $("#multipArray")
+//     .val()
+//     .split(";")
+//     .map((x) => {
+//       return x.split(",");
+//     }),
+let data = [
+    [1, 6, 10],
+    [2, 7, 15],
+    [3, 8, 20],
+    [4, 9, 25],
+    [5, 10, 30],
+  ],
   options = {
     graphHeight: "300px",
     graphWidth: "600px",
@@ -24,7 +31,7 @@ let data = $("#multipArray")
     titleTextColor: "black",
     titlePosition: "relative",
     titleFontSize: "2rem",
-    spacing: data[0].length > 1 ? 600 / data[0].length : 600 / data.length,
+    spacing: 600 / data.length,
     titleTextTransform: "uppercase",
     xTextColor: "black",
     xFontSize: "1rem",
@@ -43,12 +50,12 @@ const drawBarChart = (data, options, element) => {
 };
 
 $("#showChart").on("click", () => {
-  data = $("#multipArray")
-    .val()
-    .split(";")
-    .map((x) => {
-      return x.split(",");
-    });
+  // data = $("#multipArray")
+  //   .val()
+  //   .split(";")
+  //   .map((x) => {
+  //     return x.split(",");
+  //   });
   options = {
     ...options,
     graphHeight: `${$("#graphHeight").val()}`,

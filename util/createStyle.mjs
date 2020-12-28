@@ -26,11 +26,10 @@ export default function createStyle(data, options) {
     fontSize: `${titleFontSize}`,
     width: `${graphWidth}`,
     position: `${titlePosition}`,
-    top: "-60px",
+    top: "-90px",
   });
 
   $("td").css({
-    display: "block",
     color: `${barTextColor}`,
     fontSize: `${valueFontSize}`,
     textAlign: `${valuePosition}`,
