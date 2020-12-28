@@ -15,7 +15,7 @@ import { element } from "./util/data.mjs";
 //       return x.split(",");
 //     }),
 let data = [
-    [1, 6, 10],
+    [27, 6, 10],
     [2, 7, 15],
     [3, 8, 20],
     [4, 9, 25],

@@ -39,14 +39,14 @@ export default function createStyle(data, options) {
     top: `${barTextPosition.middle}`,
     zIndex: "10",
   });
-  $("tbody tr").css({
+  $("tbody .tr").css({
     height: "100%",
     color: `${xTextColor}`,
     fontSize: `${xFontSize}`,
   });
   $("tr th").css({
     bottom: "-3em",
-    marginLeft: "1.5rem",
+    marginLeft: "0",
   });
 
   $("#ticks").css({
