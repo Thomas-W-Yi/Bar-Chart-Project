@@ -1,12 +1,13 @@
 export default function createBar(data, options) {
-  let subArrSum = data.map((x) => {
+  let { barColor } = options;
+
+  if (data[0].length > 1) {
+    let subArrSum = data.map((x) => {
       return x.reduce((sum, val) => {
         return (sum += val);
       }, 0);
-    }),
-    { barColor } = options;
-  let percentArr = [];
-  if (data[0].length > 1) {
+    });
+    let percentArr = [];
     for (let i = 0; i < data.length; i++) {
       let subArr = [0];
       data[i].map((x) => {
@@ -26,7 +27,6 @@ export default function createBar(data, options) {
         })
       );
     }
-
     for (let i = 0; i < data.length; i++) {
       let max = 0;
       subArrSum.map((x) => {
@@ -60,12 +60,15 @@ export default function createBar(data, options) {
     data.map((x, index) => {
       let percentage = (x / max) * 100;
       $(`#${index}`).append(
-        `<div class="flexItem"><td class="bar${i}"><p>${x}</p></td></div>`
+        `<tr class="trBar${index}"><td class="bar${index}"><p>${x}</p></td></tr>`
       );
+      $(`.trBar${index}`).css({
+        height: "100%",
+      });
       $("td")
         .last()
         .css({
-          height: `${percentage + 1}%`,
+          height: `${percentage}%`,
           width: "50px",
           backgroundColor: `${barColor[0]}`,
         });

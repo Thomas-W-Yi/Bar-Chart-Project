@@ -1,8 +1,18 @@
 let data = $("#multipArray")
     .val()
-    .split(";")
+    .split("],")
     .map((x) => {
       return x.split(",");
+    })
+    .map((x) => {
+      return x.map((y) => {
+        return y
+          .split("")
+          .filter((z) => {
+            return z === "[" || z === "]" ? false : true;
+          })
+          .join("");
+      });
     }),
   options = {
     graphHeight: "300px",
@@ -61,3 +71,21 @@ $("#element").on("keypress", (e) => {
 });
 
 export { data, options, element };
+
+let value = "[[1,6,10], [2,7,15], [3,8,20],[4,9,25],[5,10,30]]";
+let arr = value
+  .split("],")
+  .map((x) => {
+    return x.split(",");
+  })
+  .map((x) => {
+    return x.map((y) => {
+      return y
+        .split("")
+        .filter((z) => {
+          return z === "[" || z === "]" ? false : true;
+        })
+        .join("");
+    });
+  });
+console.log(arr);
