@@ -10,7 +10,16 @@ body {
   align-items: center;
   background-color: #eae7dc;
 }
-
+.content {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+.row {
+  width: 100%;
+  margin: auto;
+  padding: auto;
+}
 #q-graph tr,
 #q-graph th,
 #q-graph td {
