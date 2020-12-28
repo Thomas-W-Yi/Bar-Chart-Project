@@ -34,3 +34,7 @@ body {
   margin-left: 0;
   margin-bottom: 2rem;
 }
+
+#dataInput {
+  width: 100%;
+}
